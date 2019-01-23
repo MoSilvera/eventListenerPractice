@@ -1,17 +1,12 @@
 
 let allPowers = document.querySelectorAll(".power")
 
-
-// function allPowerManipulator (yourSection) {
-//     yourSection.classList.toggle("disabled")
-//     yourSection.classList.toggle("enabled")
-// }
+function allPowerManipulator (yourSection) {
+    yourSection.classList.toggle("disabled")
+    yourSection.classList.toggle("enabled")
+}
 
 let combinedFunction = () => {
-    function allPowerManipulator (yourSection) {
-        yourSection.classList.toggle("disabled")
-        yourSection.classList.toggle("enabled")
-    }
     let powerID = event.target.id.split("-")[1]
     let correctButton = document.getElementById(powerID)
     allPowerManipulator(correctButton)
@@ -38,6 +33,7 @@ document.querySelector("#activate-flight").addEventListener("click", combinedFun
 document.querySelector("#activate-mindreading").addEventListener("click", combinedFunction)
 
 document.querySelector("#activate-xray").addEventListener("click", combinedFunction)
+
 document.querySelector("#activate-all").addEventListener("click", allPowerEnable)
 
 document.querySelector("#deactivate-all").addEventListener("click", allPowerDisable)
@@ -60,9 +56,10 @@ document.querySelector("#deactivate-all").addEventListener("click", allPowerDisa
             //     xraySection.classList.toggle("enabled")
             
             // }
-
+            
             // let flightSection = document.getElementById("flight")
             
             // let mindreadingSection = document.getElementById("mindreading")
             
             // let xraySection = document.getElementById("xray")
+            
