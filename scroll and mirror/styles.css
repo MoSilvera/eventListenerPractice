@@ -1,0 +1,33 @@
+#boxes {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+#leftBox {
+    border: 1px solid red; 
+    margin: 20px 20px;
+    padding: 30px 50px; 
+
+}
+
+#rightBox {
+    border: 1px solid blue;
+    margin: 20px 20px;
+    padding: 30px 50px;
+}
+
+#container {
+    display: flex;
+    min-height: 1500px;
+  }
+  
+  #audrey {
+    background-color: purple;
+    color: snow;
+    min-height: 100px;
+    min-width: 50px;
+    position: fixed;
+
+  }
